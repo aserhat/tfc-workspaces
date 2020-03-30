@@ -3,4 +3,5 @@ module lab-1 {
 
   tfe_org = "Symmetry"
   workspace = "lab-1"
+  gcp_creds = "var.gcp_creds"
 }

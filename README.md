@@ -22,3 +22,13 @@
   * Check that your workspace(s) gets created in your Terraform Cloud portal.
   * You may have to go to the workspace you created in Terraform Cloud and queue a plan once.
   * Make changes to main.tf as needed, git add, commit and push.
+
+## Release Notes
+
+### v1.0.0
+* Everything you see above.
+
+### v1.1.0
+* Adds a sensitive credential in the created workspaces for Google Compute Platform (GCP).
+  * To use add create a service in in GCP with need rights, create a JSON Key.
+  * In your parent workspace (tfc-worksapce above) create a sensitive variable gcp_creds with the contents of the key.

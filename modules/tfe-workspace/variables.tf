@@ -9,3 +9,6 @@ variable "vcs_repo_identifier" {
 variable "vcs_repo_branch" {
   default = ""
 }
+variable "vcs_repo_oauth_token" {
+  default = ""
+}

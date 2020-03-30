@@ -1,6 +1,10 @@
 resource "tfe_workspace" "workspace" {
     name  = var.workspace
     organization = var.tfe_org
+    vcs_repo {
+        identifier = var.vcs_repo_identifier
+        branch = var.vcs_repo_branch
+    }
 }
 
 resource "tfe_variable" "tfe_org" {

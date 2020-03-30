@@ -4,7 +4,7 @@ resource "tfe_workspace" "workspace" {
     vcs_repo {
         identifier = var.vcs_repo_identifier
         branch = var.vcs_repo_branch
-        oauth_token_ud = var.vcs_repo_oath_token
+        oauth_token_id = var.vcs_repo_oath_token
     }
 }
 

@@ -7,6 +7,7 @@ resource "tfe_workspace" "workspace" {
         oauth_token_id = var.vcs_repo_oauth_token
     }
     terraform_version = var.terraform_version
+    auto_apply = var.auto_apply
 }
 
 resource "tfe_variable" "tfe_org" {

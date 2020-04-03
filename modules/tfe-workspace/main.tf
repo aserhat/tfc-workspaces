@@ -6,6 +6,7 @@ resource "tfe_workspace" "workspace" {
         branch = var.vcs_repo_branch
         oauth_token_id = var.vcs_repo_oauth_token
     }
+    terraform_version = var.terrafor_version
 }
 
 resource "tfe_variable" "tfe_org" {

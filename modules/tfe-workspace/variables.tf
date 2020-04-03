@@ -4,6 +4,9 @@ variable "gcp_creds" {
   default = ""
 }
 
+variable "terraform_version" {
+  default = "0.12.24"
+}
 variable "vcs_repo_identifier" {
   default = ""
 }

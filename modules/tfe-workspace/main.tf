@@ -25,11 +25,3 @@ resource "tfe_variable" "gcp_creds" {
     sensitive = true
     workspace_id = tfe_workspace.workspace.id
 }
-
-resource "tfe_variable" "gcp_creds_2" {
-    key = "gcp_creds_2"
-    value = var.gcp_creds_2
-    category = "terraform"
-    sensitive = false
-    workspace_id = tfe_workspace.workspace.id
-}

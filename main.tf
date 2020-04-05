@@ -4,6 +4,7 @@ module tfc-gcp-vcsim {
   tfe_org = "Symmetry"
   workspace = "tfc-gcp-vcsim"
   gcp_creds = var.gcp_creds
+  gcp_creds_2 = var.gcp_creds_2
 
   vcs_repo_identifier = "aserhat/tfc-gcp-vcsim"
   vcs_repo_branch = "master"
@@ -20,6 +21,7 @@ module tfc-gcp-k8s {
   tfe_org = "Symmetry"
   workspace = "tfc-gcp-k8s"
   gcp_creds = var.gcp_creds
+  gcp_creds_2 = var.gcp_creds_2
 
   vcs_repo_identifier = "aserhat/tfc-gcp-k8s"
   vcs_repo_branch = "master"

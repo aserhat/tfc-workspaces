@@ -3,6 +3,9 @@ variable "workspace" {}
 variable "gcp_creds" {
   default = ""
 }
+variable "gcp_creds_2" {
+  default = ""
+}
 variable "auto_apply" {
   default = false
 }

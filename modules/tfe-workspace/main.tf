@@ -25,3 +25,20 @@ resource "tfe_variable" "gcp_creds" {
     sensitive = true
     workspace_id = tfe_workspace.workspace.id
 }
+
+
+resource "tfe_variable" "vcsim_vc_user" {
+    key = "vcsim_vc_user"
+    value = var.vcsim_vc_user
+    category = "terraform"
+    sensitive = false
+    workspace_id = tfe_workspace.workspace.id
+}
+
+resource "tfe_variable" "vcmsim_vc_pass" {
+    key = "vcmsim_vc_pass"
+    value = var.vcmsim_vc_pass
+    category = "terraform"
+    sensitive = true
+    workspace_id = tfe_workspace.workspace.id
+}

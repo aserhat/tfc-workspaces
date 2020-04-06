@@ -18,3 +18,9 @@ variable "vcs_repo_branch" {
 variable "vcs_repo_oauth_token" {
   default = ""
 }
+variable "vcsim_vc_user" {
+  default = ""
+}
+variable "vcsim_vc_pass" {
+  default = ""
+}

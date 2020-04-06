@@ -11,6 +11,9 @@ module tfc-gcp-vcsim {
 
   terraform_version = "0.11.10"
 
+  vcsim_vc_user = var.vcsim_vc_user
+  vcsim_vc_pass = var.vcsim_vc_pass
+
   auto_apply = true
 }
 
@@ -27,6 +30,9 @@ module tfc-gcp-k8s {
 
   terraform_version = "0.11.10"
 
+  vcsim_vc_user = var.vcsim_vc_user
+  vcsim_vc_pass = var.vcsim_vc_pass
+
   auto_apply = true
 }
 
@@ -40,6 +46,9 @@ module tfc-vcsim-lab-1 {
   vcs_repo_identifier = "aserhat/tfc-vcsim-lab-1"
   vcs_repo_branch = "master"
   vcs_repo_oauth_token = "ot-vbGD8WZb4KC6E9dK"
+
+  vcsim_vc_user = var.vcsim_vc_user
+  vcsim_vc_pass = var.vcsim_vc_pass
 
   auto_apply = true
 }

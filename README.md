@@ -32,3 +32,6 @@
 * Adds a sensitive credential in the created workspaces for Google Compute Platform (GCP).
   * To use add create a service in in GCP with need rights, create a JSON Key.
   * In your parent workspace (tfc-worksapce above) create a sensitive variable gcp_creds with the contents of the key.
+* Adds a set of credentials to use with vcsim
+  * In your parent workspace (tfc-workspace above) create a sensitive vairable vcsim_vc-password with the password you want to use in vcsim.
+  * In your parent workspace (tfc-workspace above) create a vairable vcsim_vc-password with the user you want to use in vcsim.

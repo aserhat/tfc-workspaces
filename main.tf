@@ -41,7 +41,5 @@ module tfc-vcsim-lab-1 {
   vcs_repo_branch = "master"
   vcs_repo_oauth_token = "ot-vbGD8WZb4KC6E9dK"
 
-  terraform_version = "0.11.10"
-
   auto_apply = true
 }

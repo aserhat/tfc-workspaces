@@ -35,9 +35,9 @@ resource "tfe_variable" "vcsim_vc_user" {
     workspace_id = tfe_workspace.workspace.id
 }
 
-resource "tfe_variable" "vcmsim_vc_pass" {
-    key = "vcmsim_vc_pass"
-    value = var.vcmsim_vc_pass
+resource "tfe_variable" "vcsim_vc_pass" {
+    key = "vcsim_vc_pass"
+    value = var.vcsim_vc_pass
     category = "terraform"
     sensitive = true
     workspace_id = tfe_workspace.workspace.id

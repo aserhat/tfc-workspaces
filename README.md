@@ -9,11 +9,13 @@
 ## Get Started
 
 * Create a project in GitHub (I called mine tfc-workspaces)
-  * Initialize it with a README.md which creating it.
+  * Initialize it with a README.md when creating it.
 * Create an organization in Terraform Cloud (I called mine Symmetry)
-* In Terraform Cloud create a workspace which will be used to create other workspaces (I called mine tfc-workspace):
+* Setup a VCS Proivder in Terraform Cloud pointing to your GitHub Account.
+* In Terraform Cloud create a workspace which will be used to create other workspaces (I called mine tfc-workspaces):
   * Set the version control settings to connect to the particular repository create above.
     * I use granular permissions and speficy which repos the Terraform Cloud Github Application can access.
+    * I also do Always trigger runs.
   * Create a sensitive variable in the workspace called to hold the api key you created (I called mine tfc_token).
   * Update the worksapce General Settings to Auto Apply for the Apply Method.
 * Put this code in the root of your GitHub project:
@@ -32,6 +34,8 @@
 * Adds a sensitive credential in the created workspaces for Google Compute Platform (GCP).
   * To use add create a service in in GCP with need rights, create a JSON Key.
   * In your parent workspace (tfc-worksapce above) create a sensitive variable gcp_creds with the contents of the key.
+
+### v1.2.0
 * Adds a set of credentials to use with vcsim
-  * In your parent workspace (tfc-workspace above) create a sensitive vairable vcsim_vc-password with the password you want to use in vcsim.
-  * In your parent workspace (tfc-workspace above) create a vairable vcsim_vc-password with the user you want to use in vcsim.
+  * In your parent workspace (tfc-workspace above) create a sensitive variable vcsim_vc_pass with the password you want to use in vcsim.
+  * In your parent workspace (tfc-workspace above) create a variable vcsim_vc_user with the user you want to use in vcsim.
